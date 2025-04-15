@@ -1,6 +1,6 @@
 {
   "name": "create-mcp-server-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Quickly create MCP server app",
   "author": "Boguan <786506@gmail.com>",
   "type": "module",
@@ -22,6 +22,7 @@
     "dist",
     "template",
     "README.md",
+    "README.zh.md",
     "LICENSE",
     "package.json"
   ],

@@ -33,8 +33,8 @@ yarn create mcp-server-app my-mcp-server
 ```
 my-mcp-server/
 ├── src/
-│   ├── server.ts        # Main server implementation
-│   ├── resources/       # Resource handlers
+│   ├── index.ts        # Main server implementation
+│   ├── resources/      # Resource handlers
 │   ├── tools/          # Tool implementations
 │   └── prompts/        # Prompt templates
 ├── package.json

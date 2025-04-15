@@ -33,8 +33,8 @@ yarn create mcp-server-app my-mcp-server
 ```
 my-mcp-server/
 ├── src/
-│   ├── server.ts        # 主服务器实现
-│   ├── resources/       # 资源处理器
+│   ├── index.ts       # 主服务器实现
+│   ├── resources/      # 资源处理器
 │   ├── tools/          # 工具实现
 │   └── prompts/        # 提示模板
 ├── package.json
