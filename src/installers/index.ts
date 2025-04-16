@@ -5,5 +5,4 @@ export interface InstallerOptions {
   pkgManager: PackageManager;
   noInstall: boolean;
   projectName: string;
-  scopedAppName: string;
-}
+};

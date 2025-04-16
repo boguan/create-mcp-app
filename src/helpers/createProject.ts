@@ -28,11 +28,13 @@ export const createProject = async ({
     noInstall,
   });
 
+  const sourceDir = path.join(PKG_ROOT, `template/extras/server-type/${serverType}`);
+  const targetDir = path.join(projectDir, "src");
+  fs.cpSync(sourceDir, targetDir, { 
+    recursive: true,
+    force: true 
+  });
   if (serverType === 'advanced') {
-    fs.copyFileSync(
-      path.join(PKG_ROOT, "template/extras/server-type/server.ts"),
-      path.join(projectDir, "src/index.ts")
-    );
     addPackageDependency({
       projectDir,
       dependencies: ["zod-to-json-schema"],
