@@ -1,3 +1,5 @@
+[English](../README.md) | 简体中文 | [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md)
+
 # create-mcp-server-app
 
 一个快速创建 Model Context Protocol (MCP) 服务器应用的 CLI 工具。
@@ -21,6 +23,9 @@ pnpm create mcp-server-app my-mcp-server
 
 # 使用 yarn
 yarn create mcp-server-app my-mcp-server
+
+# 使用 bun
+bun create mcp-server-app my-mcp-server
 ```
 
 ## 要求

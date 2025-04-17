@@ -1,3 +1,5 @@
+English | [简体中文](docs/README_zh-CN.md) | [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md)
+
 # create-mcp-server-app
 
 A CLI tool to quickly scaffold a Model Context Protocol (MCP) server application.
@@ -21,7 +23,12 @@ pnpm create mcp-server-app my-mcp-server
 
 # Using yarn
 yarn create mcp-server-app my-mcp-server
+
+# Using bun
+bun create mcp-server-app my-mcp-server
 ```
+
+It will create a directory called my-mcp-server inside the current folder.
 
 ## Requirements
 
