@@ -15,7 +15,7 @@ export const scaffoldProject = async ({
   pkgManager,
   noInstall,
 }: InstallerOptions) => {
-  const srcDir = path.join(PKG_ROOT, "template/base");
+  const srcDir = path.join(PKG_ROOT, "boilerplate/base");
 
   if (!noInstall) {
     logger.info(`\nUsing: ${chalk.cyan.bold(pkgManager)}\n`);

@@ -48,8 +48,8 @@ export default tseslint.config(
     },
   },
   {
-    // Template files don't have reliable type information
-    files: ["./template/**/*.{ts,tsx}"],
+    // Boilerplate files don't have reliable type information
+    files: ["./boilerplate/**/*.{ts,tsx}"],
     extends: [tseslint.configs.disableTypeChecked],
   },
   {

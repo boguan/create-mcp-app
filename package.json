@@ -21,7 +21,7 @@
   },
   "files": [
     "dist",
-    "template",
+    "boilerplate",
     "README.md",
     "README.zh.md",
     "LICENSE",

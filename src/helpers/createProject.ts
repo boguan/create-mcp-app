@@ -28,7 +28,7 @@ export const createProject = async ({
     noInstall,
   });
 
-  const sourceDir = path.join(PKG_ROOT, `template/extras/server-type/${serverType}`);
+  const sourceDir = path.join(PKG_ROOT, `boilerplate/extras/server-type/${serverType}`);
   const targetDir = path.join(projectDir, "src");
   fs.cpSync(sourceDir, targetDir, { 
     recursive: true,

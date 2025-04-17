@@ -7,7 +7,7 @@ A CLI tool to quickly scaffold a Model Context Protocol (MCP) server application
 - 🚀 Quick setup of MCP server applications
 - 📦 Built-in TypeScript support
 - 🔧 Modern development tooling
-- 📝 Well-structured project template
+- 📝 Well-structured project boilerplate
 - 🎯 Easy to extend and customize
 
 ## Quick Start
