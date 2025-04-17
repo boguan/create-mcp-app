@@ -21,9 +21,9 @@
   },
   "files": [
     "dist",
+    "docs",
     "boilerplate",
     "README.md",
-    "README.zh.md",
     "LICENSE",
     "package.json"
   ],
