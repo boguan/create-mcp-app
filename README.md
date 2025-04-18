@@ -40,10 +40,11 @@ It will create a directory called my-mcp-server inside the current folder.
 ```
 my-mcp-server/
 ├── src/
-│   ├── index.ts        # Main server implementation
-│   ├── resources/      # Resource handlers
-│   ├── tools/          # Tool implementations
-│   └── prompts/        # Prompt templates
+│   ├── index.ts          # Main entry point
+│   ├── server/
+│       ├── server.ts     # Core server setup
+│       ├── resources.ts  # Resource-related handlers
+│       └── tools.ts      # Tool-related handlers
 ├── package.json
 ├── tsconfig.json
 └── README.md

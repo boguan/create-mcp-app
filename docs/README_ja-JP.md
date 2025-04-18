@@ -38,10 +38,11 @@ bun create mcp-server-app my-mcp-server
 ```
 my-mcp-server/
 ├── src/
-│   ├── index.ts        # メインサーバーの実装
-│   ├── resources/      # リソースハンドラー
-│   ├── tools/          # ツールの実装
-│   └── prompts/        # プロンプトテンプレート
+│   ├── index.ts          # メインエントリーポイント
+│   ├── server/
+│       ├── server.ts     # コアサーバーセットアップ
+│       ├── resources.ts  # リソース関連ハンドラー
+│       └── tools.ts      # ツール関連ハンドラー
 ├── package.json
 ├── tsconfig.json
 └── README.md

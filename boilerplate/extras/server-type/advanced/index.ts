@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { createServer } from "./server.js";
+import { createServer } from "./server/server.js";
 
 // Start receiving messages on stdin and sending messages on stdout
 async function main() {
