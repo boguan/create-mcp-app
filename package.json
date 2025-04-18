@@ -1,6 +1,6 @@
 {
   "name": "create-mcp-server-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Quickly create MCP server app",
   "author": "Boguan <786506@gmail.com>",
   "type": "module",

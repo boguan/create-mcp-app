@@ -1,5 +1,5 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import packageJson from "../../../package.json" with { type: "json" };
+import packageJson from "../../package.json" with { type: "json" };
 import { registerToolHandlers } from "./handlers/tools.js";
 import { registerResourceHandlers } from "./handlers/resources.js";
 
