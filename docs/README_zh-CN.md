@@ -1,4 +1,4 @@
-[English](../README.md) | 简体中文 | [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md)
+[English](../README.md) | 简体中文 | [繁體中文](README_zh-TW.md) | [日本語](README_ja-JP.md)
 
 # create-mcp-server-app
 
