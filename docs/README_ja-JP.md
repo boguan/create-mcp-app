@@ -16,16 +16,16 @@ Model Context Protocol (MCP) サーバーアプリケーションを素早く構
 
 ```bash
 # Using npm
-npx create-mcp-server-app my-mcp-server
+npx create-mcp-server-app@latest my-mcp-server
 
 # Using pnpm
-pnpm create mcp-server-app my-mcp-server
+pnpm create mcp-server-app@latest my-mcp-server
 
 # Using yarn
-yarn create mcp-server-app my-mcp-server
+yarn create mcp-server-app@latest my-mcp-server
 
 # Using bun
-bun create mcp-server-app my-mcp-server
+bun create mcp-server-app@latest my-mcp-server
 ```
 
 ## 必要条件
@@ -54,8 +54,8 @@ my-mcp-server/
 # 依存関係のインストール
 pnpm install
 
-# 開発サーバーの起動
-pnpm dev
+# TypeScript コンパイラーの監視モードを起動
+pnpm watch
 
 # プロダクションビルド
 pnpm build

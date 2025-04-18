@@ -16,16 +16,16 @@ A CLI tool to quickly scaffold a Model Context Protocol (MCP) server application
 
 ```bash
 # Using npm
-npx create-mcp-server-app my-mcp-server
+npx create-mcp-server-app@latest my-mcp-server
 
 # Using pnpm
-pnpm create mcp-server-app my-mcp-server
+pnpm create mcp-server-app@latest my-mcp-server
 
 # Using yarn
-yarn create mcp-server-app my-mcp-server
+yarn create mcp-server-app@latest my-mcp-server
 
 # Using bun
-bun create mcp-server-app my-mcp-server
+bun create mcp-server-app@latest my-mcp-server
 ```
 
 It will create a directory called my-mcp-server inside the current folder.
@@ -56,8 +56,8 @@ my-mcp-server/
 # Install dependencies
 pnpm install
 
-# Start development server
-pnpm dev
+# Start TypeScript compiler in watch mode
+pnpm watch
 
 # Build for production
 pnpm build

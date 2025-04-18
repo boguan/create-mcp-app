@@ -16,16 +16,16 @@
 
 ```bash
 # 使用 npm
-npx create-mcp-server-app my-mcp-server
+npx create-mcp-server-app@latest my-mcp-server
 
 # 使用 pnpm
-pnpm create mcp-server-app my-mcp-server
+pnpm create mcp-server-app@latest my-mcp-server
 
 # 使用 yarn
-yarn create mcp-server-app my-mcp-server
+yarn create mcp-server-app@latest my-mcp-server
 
 # 使用 bun
-bun create mcp-server-app my-mcp-server
+bun create mcp-server-app@latest my-mcp-server
 ```
 
 ## 要求
@@ -54,8 +54,8 @@ my-mcp-server/
 # 安装依赖
 pnpm install
 
-# 启动开发服务器
-pnpm dev
+# 启动 TypeScript 编译器监视模式
+pnpm watch
 
 # 构建生产版本
 pnpm build
