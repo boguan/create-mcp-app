@@ -1,11 +1,17 @@
 import { execSync } from "child_process";
 import https from "https";
+import { type PackageJson } from "type-fest";
 
 import { getVersion } from "./version.js";
 import { logger } from "./logger.js";
 
-export const renderVersionWarning = (npmVersion: string) => {
-  const currentVersion = getVersion();
+interface RenderVersionWarningOptions {
+  npmVersion: string;
+  packageJson: PackageJson;
+}
+
+export const renderVersionWarning = ({ npmVersion, packageJson }: RenderVersionWarningOptions) => {
+  const currentVersion = getVersion(packageJson);
 
   //   console.log("current", currentVersion);
   //   console.log("npm", npmVersion);
@@ -72,6 +78,7 @@ export const getNpmVersion = () =>
   // `fetch` to the registry is faster than `npm view` so we try that first
   checkForLatestVersion().catch(() => {
     try {
+      // TODO
       return execSync("npm view create-mcp-server-app version").toString().trim();
     } catch {
       return null;

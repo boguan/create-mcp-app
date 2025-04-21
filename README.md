@@ -1,76 +1,43 @@
-English | [简体中文](docs/README_zh-CN.md) | [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md)
+# create-mcp-app
 
-# create-mcp-server-app
-
-A CLI tool to quickly scaffold a Model Context Protocol (MCP) server application.
+A scaffolding toolkit for Model Context Protocol (MCP) applications.
 
 ## Features
 
-- 🚀 Quick setup of MCP server applications
+- 🚀 Quick setup of MCP applications
 - 📦 Built-in TypeScript support
 - 🔧 Modern development tooling
-- 📝 Well-structured project boilerplate
+- 📝 Well-structured project templates
 - 🎯 Easy to extend and customize
+- 🏗️ Monorepo architecture support
+
+## Apps and Packages
+
+### Applications
+
+- `create-mcp-server-app`: MCP server application creation tool
+- `docs`: Documentation application
+
+### Packages
+
+- `@mcp/eslint-config`: ESLint configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@mcp/typescript-config`: `tsconfig.json` configurations used throughout the monorepo
+
+All applications and packages are developed using TypeScript.
+
+## Development Tools
+
+This project comes configured with:
+
+- [TypeScript](https://www.typescriptlang.org/) - Static type checking
+- [ESLint](https://eslint.org/) - Code linting
+- [Prettier](https://prettier.io) - Code formatting
+- [Turborepo](https://turbo.build/) - Monorepo build system
 
 ## Quick Start
 
+### Create MCP Server Application
+
 ```bash
-# Using npm
 npx create-mcp-server-app@latest my-mcp-server
-
-# Using pnpm
-pnpm create mcp-server-app@latest my-mcp-server
-
-# Using yarn
-yarn create mcp-server-app@latest my-mcp-server
-
-# Using bun
-bun create mcp-server-app@latest my-mcp-server
 ```
-
-It will create a directory called my-mcp-server inside the current folder.
-
-## Requirements
-
-- Node.js >= 18.17.0
-- npm, pnpm, or yarn
-
-## Project Structure
-
-```
-my-mcp-server/
-├── src/
-│   ├── index.ts          # Main entry point
-│   ├── server/
-│       ├── server.ts     # Core server setup
-│       ├── resources.ts  # Resource-related handlers
-│       └── tools.ts      # Tool-related handlers
-├── package.json
-├── tsconfig.json
-└── README.md
-```
-
-## Development
-
-```bash
-# Install dependencies
-pnpm install
-
-# Start TypeScript compiler in watch mode
-pnpm watch
-
-# Build for production
-pnpm build
-```
-
-## License
-
-MIT
-
-## Author
-
-Boguan <786506@gmail.com>
-
-## Acknowledgments
-
-This project is based on the [Model Context Protocol TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk).

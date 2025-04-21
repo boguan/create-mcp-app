@@ -1,18 +1,19 @@
 import fs from "fs";
 import path from "path";
 
-import { PKG_ROOT } from "~/consts.js";
 import { scaffoldProject } from "~/helpers/scaffoldProject.js";
 import { addPackageDependency } from "~/utils/addPackageDependency.js";
 import { getUserPkgManager } from "~/utils/getUserPkgManager.js";
 
 interface CreateProjectOptions {
+  boilerplatePath: string;
   projectName: string;
   noInstall: boolean;
   serverType: 'high-level' | 'advanced';
 }
 
 export const createProject = async ({
+  boilerplatePath,
   projectName,
   noInstall,
   serverType,
@@ -22,13 +23,14 @@ export const createProject = async ({
 
   // Bootstraps the base Next.js application
   await scaffoldProject({
+    boilerplatePath,
     projectName,
     projectDir,
     pkgManager,
     noInstall,
   });
 
-  const sourceDir = path.join(PKG_ROOT, `boilerplate/extras/server-type/${serverType}`);
+  const sourceDir = path.join(boilerplatePath, `extras/server-type/${serverType}`);
   const targetDir = path.join(projectDir, "src");
   fs.cpSync(sourceDir, targetDir, { 
     recursive: true,

@@ -17,22 +17,29 @@ import {
   renderVersionWarning,
 } from "./utils/renderVersionWarning.js";
 
-const main = async () => {
+interface MainOptions {
+  packageJson: PackageJson;
+  defaultAppName: string;
+  boilerplatePath: string;
+}
+
+const main = async ({ packageJson, defaultAppName, boilerplatePath }: MainOptions) => {
   const npmVersion = await getNpmVersion();
   const pkgManager = getUserPkgManager();
   if (npmVersion) {
-    renderVersionWarning(npmVersion);
+    renderVersionWarning({ npmVersion, packageJson });
   }
 
   const {
     appName,
     flags: { noGit, noInstall, serverType },
-  } = await runCli();
+  } = await runCli(packageJson, defaultAppName);
 
   // e.g. dir/@mono/app returns ["@mono/app", "dir/app"]
   const [scopedAppName, appDir] = parseNameAndPath(appName);
 
   const projectDir = await createProject({
+    boilerplatePath,
     projectName: appDir,
     noInstall,
     serverType,
@@ -66,7 +73,7 @@ const main = async () => {
   }
 
   await logNextSteps({
-    projectName: appDir,
+    projectName: appDir ?? defaultAppName,
     noInstall,
     projectDir,
   });
@@ -74,15 +81,4 @@ const main = async () => {
   process.exit(0);
 };
 
-main().catch((err) => {
-  logger.error("Aborting installation...");
-  if (err instanceof Error) {
-    logger.error(err);
-  } else {
-    logger.error(
-      "An unknown error has occurred. Please open an issue on github with the below:"
-    );
-    console.log(err);
-  }
-  process.exit(1);
-});
+export { main, logger };
