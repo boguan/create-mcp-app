@@ -1,7 +1,7 @@
 {
-  "name": "create-mcp-server-app",
+  "name": "create-mcp-client-app",
   "version": "0.0.7",
-  "description": "Quickly create MCP server app",
+  "description": "Quickly create MCP client app",
   "author": "Boguan <786506@gmail.com>",
   "type": "module",
   "license": "MIT",
@@ -12,12 +12,12 @@
   "keywords": [
     "mcp",
     "modelcontextprotocol",
-    "mcp-server-app",
+    "mcp-client-app",
     "mcp-app"
   ],
   "exports": "./dist/index.js",
   "bin": {
-    "create-mcp-server-app": "./dist/index.js"
+    "create-mcp-client-app": "./dist/index.js"
   },
   "files": [
     "dist",
