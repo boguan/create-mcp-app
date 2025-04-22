@@ -1,11 +1,13 @@
 {
   "name": "mcp-server-boilerplate",
-  "private": true,
   "version": "0.0.1",
   "description": "",
   "type": "module",
+  "bin": {
+      "mcp-server-boilerplate": "dist/index.js"
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod 755 dist/index.js",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector dist/index.js"

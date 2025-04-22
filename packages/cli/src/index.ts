@@ -50,6 +50,9 @@ const main = async ({ packageJson, defaultAppName, boilerplatePath }: MainOption
     path.join(projectDir, "package.json")
   ) as PackageJson;
   pkgJson.name = scopedAppName;
+  pkgJson.bin = {
+    [`${scopedAppName}`]: "dist/index.js"
+  };
 
   // ? Bun doesn't support this field (yet)
   if (pkgManager !== "bun") {
