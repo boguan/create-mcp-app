@@ -5,6 +5,7 @@ export const registerTools = (server: McpServer) => {
   // Add an addition tool
   // Returns the sum of two numbers as text
   server.tool("add",
+    "Add two numbers", // Tool description is optional
     {
       a: z.number().describe("The first number to add"),
       b: z.number().describe("The second number to add")
