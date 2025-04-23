@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { main, logger } from "@mcp/cli";
+import { clientMain as main, logger } from "@mcp/cli";
 import path from "path";
 import fs from "fs-extra";
 import { type PackageJson } from "type-fest";

@@ -1,34 +1,34 @@
 English | [简体中文](docs/README_zh-CN.md) | [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md)
 
-# create-mcp-server-app
+# create-mcp-client-app
 
-A CLI tool to quickly scaffold a Model Context Protocol (MCP) server application.
+A CLI tool to quickly scaffold a Model Context Protocol (MCP) client application.
 
 ## Features
 
-- 🚀 Quick setup of MCP server applications
-- 📦 Built-in TypeScript support
-- 🔧 Modern development tooling
-- 📝 Well-structured project boilerplate
-- 🎯 Easy to extend and customize
+- 🚀 Instant MCP client setup with one-command project initialization
+- 📦 First-class TypeScript support with complete type hints and checks
+- 🔧 Integrated modern development toolchain for enhanced productivity
+- 📝 Optimized project architecture with clear code organization
+- 🎯 Flexible extension system supporting custom module integration
 
 ## Quick Start
 
 ```bash
 # Using npm
-npx create-mcp-server-app@latest my-mcp-server
+npx create-mcp-client-app@latest my-mcp-client
 
 # Using pnpm
-pnpm create mcp-server-app@latest my-mcp-server
+pnpm create mcp-client-app@latest my-mcp-client
 
 # Using yarn
-yarn create mcp-server-app@latest my-mcp-server
+yarn create mcp-client-app@latest my-mcp-client
 
 # Using bun
-bun create mcp-server-app@latest my-mcp-server
+bun create mcp-client-app@latest my-mcp-client
 ```
 
-It will create a directory called my-mcp-server inside the current folder.
+It will create a directory called my-mcp-client inside the current folder.
 
 ## Requirements
 
@@ -38,13 +38,14 @@ It will create a directory called my-mcp-server inside the current folder.
 ## Project Structure
 
 ```
-my-mcp-server/
+my-mcp-client/
 ├── src/
-│   ├── index.ts          # Main entry point
-│   ├── server/
-│       ├── server.ts     # Core server setup
-│       ├── resources.ts  # Resource-related handlers
-│       └── tools.ts      # Tool-related handlers
+│   ├── MCPClient.ts           # MCP client implementation
+│   ├── index.ts               # Main entry point
+│   └── types.d.ts             # TypeScript type definitions
+├── .env                       # Environment configuration file
+├── .gitignore                   # Git ignore configuration file
+├── server-config.json.example   # Example server configuration file
 ├── package.json
 ├── tsconfig.json
 └── README.md

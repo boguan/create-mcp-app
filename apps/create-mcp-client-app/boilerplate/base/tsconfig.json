@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "target": "ES2022",
     "strict": true,
     "esModuleInterop": true,
@@ -9,10 +10,12 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "moduleResolution": "NodeNext",
-    "module": "NodeNext"
+    "module": "NodeNext",
+    "strictNullChecks": true,
+    "typeRoots": ["./node_modules/@types", "./node_modules/@modelcontextprotocol/sdk/dist/esm/types.d.ts"]
   },
   "include": [
     "./**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

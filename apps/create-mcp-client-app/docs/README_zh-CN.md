@@ -1,31 +1,31 @@
 [English](../README.md) | 简体中文 | [繁體中文](README_zh-TW.md) | [日本語](README_ja-JP.md)
 
-# create-mcp-server-app
+# create-mcp-client-app
 
-一个快速创建 Model Context Protocol (MCP) 服务器应用的 CLI 工具。
+一个快速创建 Model Context Protocol (MCP) 客户端应用的 CLI 工具。
 
 ## 特性
 
-- 🚀 快速搭建 MCP 服务器应用
-- 📦 内置 TypeScript 支持
-- 🔧 现代化的开发工具链
-- 📝 结构良好的项目模板
-- 🎯 易于扩展和自定义
+- 🚀 快速搭建 MCP 客户端应用，一键完成项目初始化
+- 📦 内置 TypeScript 支持，享受完整的类型提示和检查
+- 🔧 集成现代化开发工具链，提升开发效率
+- 📝 优化的项目结构设计，清晰的代码组织
+- 🎯 灵活的扩展机制，支持自定义功能模块
 
 ## 快速开始
 
 ```bash
-# 使用 npm
-npx create-mcp-server-app@latest my-mcp-server
+# Using npm
+npx create-mcp-client-app@latest my-mcp-client
 
-# 使用 pnpm
-pnpm create mcp-server-app@latest my-mcp-server
+# Using pnpm
+pnpm create mcp-client-app@latest my-mcp-client
 
-# 使用 yarn
-yarn create mcp-server-app@latest my-mcp-server
+# Using yarn
+yarn create mcp-client-app@latest my-mcp-client
 
-# 使用 bun
-bun create mcp-server-app@latest my-mcp-server
+# Using bun
+bun create mcp-client-app@latest my-mcp-client
 ```
 
 ## 要求
@@ -36,13 +36,14 @@ bun create mcp-server-app@latest my-mcp-server
 ## 项目结构
 
 ```
-my-mcp-server/
+my-mcp-client/
 ├── src/
-│   ├── index.ts          # 主入口文件
-│   ├── server/
-│       ├── server.ts     # 核心服务器实现
-│       ├── resources.ts  # 资源相关实现
-│       └── tools.ts      # 工具相关实现
+│   ├── MCPClient.ts           # MCP 客户端实现
+│   ├── index.ts               # 主入口文件
+│   └── types.d.ts             # TypeScript 类型定义
+├── .env                       # 环境配置文件
+├── .gitignore                   # Git 忽略配置文件
+├── server-config.json.example   # 服务器配置示例文件
 ├── package.json
 ├── tsconfig.json
 └── README.md

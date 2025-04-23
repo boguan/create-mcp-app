@@ -1,6 +1,6 @@
 {
   "name": "create-mcp-client-app",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "Quickly create MCP client app",
   "author": "Boguan <786506@gmail.com>",
   "type": "module",

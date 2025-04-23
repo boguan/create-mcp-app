@@ -9,7 +9,7 @@ interface CreateProjectOptions {
   boilerplatePath: string;
   projectName: string;
   noInstall: boolean;
-  serverType: 'high-level' | 'advanced';
+  serverType?: 'high-level' | 'advanced';
 }
 
 export const createProject = async ({
@@ -30,6 +30,11 @@ export const createProject = async ({
     noInstall,
   });
 
+  if (serverType === undefined) {
+    return projectDir;
+  }
+  
+  // Copy over the server type files (high-level or advanced)
   const sourceDir = path.join(boilerplatePath, `extras/server-type/${serverType}`);
   const targetDir = path.join(projectDir, "src");
   fs.cpSync(sourceDir, targetDir, { 

@@ -1,31 +1,31 @@
 [English](../README.md) | [简体中文](README_zh-CN.md) | 繁體中文 | [日本語](README_ja-JP.md)
 
-# create-mcp-server-app
+# create-mcp-client-app
 
-一個快速創建 Model Context Protocol (MCP) 伺服器應用的 CLI 工具。
+一個快速創建 Model Context Protocol (MCP) 客戶端應用的 CLI 工具。
 
 ## 特性
 
-- 🚀 快速搭建 MCP 伺服器應用
-- 📦 內置 TypeScript 支持
-- 🔧 現代化的開發工具鏈
-- 📝 結構良好的項目模板
-- 🎯 易於擴展和自定義
+- 🚀 快速搭建 MCP 客戶端應用，一鍵完成專案初始化
+- 📦 內建 TypeScript 支援，享受完整的類型提示和檢查
+- 🔧 集成現代化開發工具鏈，提升開發效率
+- 📝 優化的專案結構設計，清晰的程式碼組織
+- 🎯 靈活的擴展機制，支援自訂功能模組
 
 ## 快速開始
 
 ```bash
-# 使用 npm
-npx create-mcp-server-app@latest my-mcp-server
+# Using npm
+npx create-mcp-client-app@latest my-mcp-client
 
-# 使用 pnpm
-pnpm create mcp-server-app@latest my-mcp-server
+# Using pnpm
+pnpm create mcp-client-app@latest my-mcp-client
 
-# 使用 yarn
-yarn create mcp-server-app@latest my-mcp-server
+# Using yarn
+yarn create mcp-client-app@latest my-mcp-client
 
-# 使用 bun
-bun create mcp-server-app@latest my-mcp-server
+# Using bun
+bun create mcp-client-app@latest my-mcp-client
 ```
 
 ## 要求
@@ -33,16 +33,17 @@ bun create mcp-server-app@latest my-mcp-server
 - Node.js >= 18.17.0
 - npm、pnpm 或 yarn
 
-## 项目结构
+## 專案結構
 
 ```
-my-mcp-server/
+my-mcp-client/
 ├── src/
-│   ├── index.ts          # 主入口檔案
-│   ├── server/
-│       ├── server.ts     # 核心伺服器實現
-│       ├── resources.ts  # 資源相關實現
-│       └── tools.ts      # 工具相關實現
+│   ├── MCPClient.ts           # MCP 客戶端實現
+│   ├── index.ts               # 主入口檔案
+│   └── types.d.ts             # TypeScript 類型定義
+├── .env                       # 環境配置檔案
+├── .gitignore                   # Git 忽略配置檔案
+├── server-config.json.example   # 伺服器配置範例檔案
 ├── package.json
 ├── tsconfig.json
 └── README.md
@@ -57,11 +58,11 @@ pnpm install
 # 啟動 TypeScript 編譯器監視模式
 pnpm watch
 
-# 構建生產版本
+# 建構生產版本
 pnpm build
 ```
 
-## 許可證
+## 授權條款
 
 MIT
 
@@ -71,4 +72,4 @@ Boguan <786506@gmail.com>
 
 ## 致謝
 
-本項目基於 [Model Context Protocol TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) 開發。
+本專案基於 [Model Context Protocol TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) 開發。

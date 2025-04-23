@@ -41,3 +41,10 @@ This project comes configured with:
 ```bash
 npx create-mcp-server-app@latest my-mcp-server
 ```
+
+## Contributing
+
+Here's how you can contribute:
+
+- [Open an issue](https://github.com/boguan/create-mcp-app/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/boguan/create-mcp-app/pulls) to add new features/make quality-of-life improvements/fix bugs.
