@@ -8,26 +8,27 @@ import { logger } from "./logger.js";
 interface RenderVersionWarningOptions {
   npmVersion: string;
   packageJson: PackageJson;
+  packageName: string;
 }
 
-export const renderVersionWarning = ({ npmVersion, packageJson }: RenderVersionWarningOptions) => {
+export const renderVersionWarning = ({ npmVersion, packageJson, packageName }: RenderVersionWarningOptions) => {
   const currentVersion = getVersion(packageJson);
 
   //   console.log("current", currentVersion);
   //   console.log("npm", npmVersion);
 
   if (currentVersion.includes("beta")) {
-    logger.warn("  You are using a beta version of create-mcp-server-app.");
-    logger.warn("  Please report any bugs you encounter.");
+    logger.warn(`You are using a beta version of ${packageName}.`);
+    logger.warn(`Please report any bugs you encounter.`);
   } else if (currentVersion.includes("next")) {
     logger.warn(
-      "  You are running create-mcp-server-app with the @next tag which is no longer maintained."
+      `You are running ${packageName} with the @next tag which is no longer maintained.`
     );
-    logger.warn("  Please run the CLI with @latest instead.");
+    logger.warn("Please run the CLI with @latest instead.");
   } else if (currentVersion !== npmVersion) {
-    logger.warn("  You are using an outdated version of create-mcp-server-app.");
+    logger.warn(`You are using an outdated version of ${packageName}.`);
     logger.warn(
-      "  Your version:",
+      " Your version:",
       currentVersion + ".",
       "Latest version in the npm registry:",
       npmVersion
@@ -48,11 +49,11 @@ interface DistTagsBody {
   latest: string;
 }
 
-function checkForLatestVersion(): Promise<string> {
+function checkForLatestVersion(packageName: string): Promise<string> {
   return new Promise((resolve, reject) => {
     https
       .get(
-        "https://registry.npmjs.org/-/package/create-mcp-server-app/dist-tags",
+        `https://registry.npmjs.org/-/package/${packageName}/dist-tags`,
         (res) => {
           if (res.statusCode === 200) {
             let body = "";
@@ -74,12 +75,12 @@ function checkForLatestVersion(): Promise<string> {
   });
 }
 
-export const getNpmVersion = () =>
+export const getNpmVersion = (packageName: string) =>
   // `fetch` to the registry is faster than `npm view` so we try that first
-  checkForLatestVersion().catch(() => {
+  checkForLatestVersion(packageName).catch(() => {
     try {
       // TODO
-      return execSync("npm view create-mcp-server-app version").toString().trim();
+      return execSync(`npm view ${packageName} version`).toString().trim();
     } catch {
       return null;
     }

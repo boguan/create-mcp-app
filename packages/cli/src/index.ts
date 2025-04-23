@@ -25,10 +25,11 @@ interface MainOptions {
 }
 
 const serverMain = async ({ packageJson, defaultAppName, boilerplatePath }: MainOptions) => {
-  const npmVersion = await getNpmVersion();
+  const packageName = packageJson.name ?? 'create-mcp-server-app';
+  const npmVersion = await getNpmVersion(packageName);
   const pkgManager = getUserPkgManager();
   if (npmVersion) {
-    renderVersionWarning({ npmVersion, packageJson });
+    renderVersionWarning({ npmVersion, packageJson, packageName });
   }
 
   const {
@@ -51,9 +52,11 @@ const serverMain = async ({ packageJson, defaultAppName, boilerplatePath }: Main
     path.join(projectDir, "package.json")
   ) as PackageJson;
   pkgJson.name = scopedAppName;
-  pkgJson.bin = {
-    [`${scopedAppName}`]: "dist/index.js"
-  };
+  if (pkgJson.bin) {
+    pkgJson.bin = {
+      [`${scopedAppName}`]: "dist/index.js"
+    };
+  }
 
   // ? Bun doesn't support this field (yet)
   if (pkgManager !== "bun") {
@@ -86,10 +89,11 @@ const serverMain = async ({ packageJson, defaultAppName, boilerplatePath }: Main
 };
 
 const clientMain = async ({ packageJson, defaultAppName, boilerplatePath }: MainOptions) => {
-  const npmVersion = await getNpmVersion();
+  const packageName = packageJson.name ?? 'create-mcp-client-app';
+  const npmVersion = await getNpmVersion(packageName);
   const pkgManager = getUserPkgManager();
   if (npmVersion) {
-    renderVersionWarning({ npmVersion, packageJson });
+    renderVersionWarning({ npmVersion, packageJson, packageName });
   }
 
   const {

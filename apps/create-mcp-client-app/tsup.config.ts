@@ -14,7 +14,7 @@ export default defineConfig({
   onSuccess: isDev ? "node dist/index.js" : undefined,
   esbuildOptions(options) {
     options.alias = {
-      "@mcp/cli": resolve(__dirname, "../../packages/cli/dist")
+      "@mcp/cli": resolve(__dirname, "../../packages/cli/dist/index.js")
     }
   }
 });
