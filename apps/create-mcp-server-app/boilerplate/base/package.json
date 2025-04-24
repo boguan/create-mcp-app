@@ -7,7 +7,8 @@
       "mcp-server-boilerplate": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc && chmod 755 dist/index.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && chmod 755 dist/index.js",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector dist/index.js"

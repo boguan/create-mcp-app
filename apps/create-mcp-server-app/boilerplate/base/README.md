@@ -35,11 +35,11 @@ Save it and restart Claude for Desktop.
 
 To make sure that the configuration is indeed reflected and Claude for Desktop is picking up the tool we are exposing in our MCP Server, we can hover over the hammer icon and see that it is telling us 1 MCP tools available, assuming you don’t have any other MCP servers added to the configuration file.
 
-![](./assets/1.png)
+![](./docs/assets/1.png)
 
 If we click on the hammer icon, we should see our tool listed like following.
 
-![](./assets/2.png)
+![](./docs/assets/2.png)
 
 If the hammer icon has shown up, you can now test your server by running the following command in Claude for Desktop:
 
@@ -47,11 +47,11 @@ If the hammer icon has shown up, you can now test your server by running the fol
 
 You should see it asking for the permission to use the tool. Claude will not do anything without our permission. We will have to explicitly agree.
 
-![](./assets/3.png)
+![](./docs/assets/3.png)
 
 If you click on the `Allow for this chat` or `Allow once` button, you should see the result of the tool execution.
 
-![](./assets/4.png)
+![](./docs/assets/4.png)
 
 That's it!
 
