@@ -16,17 +16,19 @@
 
 ```bash
 # Using npm
-npx create-mcp-client-app@latest my-mcp-client
+npm create mcp-client-app@latest
 
 # Using pnpm
-pnpm create mcp-client-app@latest my-mcp-client
+pnpm create mcp-client-app@latest
 
 # Using yarn
-yarn create mcp-client-app@latest my-mcp-client
+yarn create mcp-client-app@latest
 
 # Using bun
-bun create mcp-client-app@latest my-mcp-client
+bun create mcp-client-app@latest
 ```
+
+这将在当前文件夹内创建一个目录。
 
 ## 要求
 

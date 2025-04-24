@@ -16,19 +16,19 @@ Model Context Protocol (MCP) クライアントアプリケーションを素早
 
 ```bash
 # npmを使用
-npx create-mcp-client-app@latest my-mcp-client
+npm create mcp-client-app@latest
 
 # pnpmを使用
-pnpm create mcp-client-app@latest my-mcp-client
+pnpm create mcp-client-app@latest
 
 # yarnを使用
-yarn create mcp-client-app@latest my-mcp-client
+yarn create mcp-client-app@latest
 
 # bunを使用
-bun create mcp-client-app@latest my-mcp-client
+bun create mcp-client-app@latest
 ```
 
-現在のフォルダ内にmy-mcp-clientという名前のディレクトリが作成されます。
+現在のフォルダ内にディレクトリが作成されます。
 
 ## 必要条件
 

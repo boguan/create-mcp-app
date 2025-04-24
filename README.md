@@ -35,11 +35,15 @@ To create a new MCP server application:
 npx create-mcp-server-app@latest my-mcp-server
 ```
 
+![Server Demo](packages/docs/server.gif)
+
 To create a new MCP client application:
 
 ```bash
 npx create-mcp-client-app@latest my-mcp-client
 ```
+
+![Server Demo](packages/docs/client.gif)
 
 ## Package Management
 

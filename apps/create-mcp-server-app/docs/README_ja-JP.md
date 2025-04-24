@@ -16,17 +16,19 @@ Model Context Protocol (MCP) サーバーアプリケーションを素早く構
 
 ```bash
 # Using npm
-npx create-mcp-server-app@latest my-mcp-server
+npm create mcp-server-app@latest
 
 # Using pnpm
-pnpm create mcp-server-app@latest my-mcp-server
+pnpm create mcp-server-app@latest
 
 # Using yarn
-yarn create mcp-server-app@latest my-mcp-server
+yarn create mcp-server-app@latest
 
 # Using bun
-bun create mcp-server-app@latest my-mcp-server
+bun create mcp-server-app@latest
 ```
+
+現在のフォルダ内にディレクトリが作成されます。
 
 ## 必要条件
 
