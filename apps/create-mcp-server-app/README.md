@@ -1,4 +1,4 @@
-English | [简体中文](docs/README_zh-CN.md) | [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md)
+English | [简体中文](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/docs/README_zh-CN.md) | [繁體中文](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/docs/README_zh-TW.md) | [日本語](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/docs/README_ja-JP.md)
 
 # create-mcp-server-app
 
