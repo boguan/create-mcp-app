@@ -43,7 +43,7 @@ To create a new MCP client application:
 npx create-mcp-client-app@latest my-mcp-client
 ```
 
-![Server Demo](packages/docs/client.gif)
+![Client Demo](packages/docs/client.gif)
 
 ## Package Management
 

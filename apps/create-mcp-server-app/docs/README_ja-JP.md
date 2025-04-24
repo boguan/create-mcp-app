@@ -30,6 +30,8 @@ bun create mcp-server-app@latest
 
 現在のフォルダ内にディレクトリが作成されます。
 
+![Server Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/server.gif)
+
 ## 必要条件
 
 - Node.js >= 18.17.0

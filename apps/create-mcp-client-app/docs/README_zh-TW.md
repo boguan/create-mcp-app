@@ -30,6 +30,8 @@ bun create mcp-client-app@latest
 
 這將在當前資料夾內創建一個目錄。
 
+![Client Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/client.gif)
+
 ## 要求
 
 - Node.js >= 18.17.0

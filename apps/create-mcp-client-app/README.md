@@ -30,6 +30,8 @@ bun create mcp-client-app@latest
 
 It will create a directory inside the current folder.
 
+![Client Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/client.gif)
+
 ## Requirements
 
 - Node.js >= 18.17.0

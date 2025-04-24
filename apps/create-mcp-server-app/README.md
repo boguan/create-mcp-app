@@ -30,6 +30,8 @@ bun create mcp-server-app@latest
 
 It will create a directory inside the current folder.
 
+![Server Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/server.gif)
+
 ## Requirements
 
 - Node.js >= 18.17.0
