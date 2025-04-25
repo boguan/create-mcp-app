@@ -43,7 +43,7 @@ bun create mcp-client-app@latest
 | -y, --default | 跳過 CLI 提示並使用所有預設選項建立新應用程式 |
 | --noInstall | 生成專案時不安裝相依套件 |
 
-使用範例：
+### 使用範例：
 
 ```bash
 # 使用指定的目錄名稱建立專案
@@ -69,16 +69,20 @@ pnpm create mcp-client-app@latest --noInstall
 ```
 my-mcp-client/
 ├── src/
-│   ├── MCPClient.ts           # MCP 客戶端實現
-│   ├── index.ts               # 主入口檔案
-│   └── types.d.ts             # TypeScript 類型定義
-├── .env                       # 環境配置檔案
+│   ├── MCPClient.ts             # MCP 客戶端實現
+│   ├── index.ts                 # 主入口檔案
+│   └── types.d.ts               # TypeScript 類型定義
+├── .env                         # 環境配置檔案
 ├── .gitignore                   # Git 忽略配置檔案
 ├── server-config.json.example   # 伺服器配置範例檔案
 ├── package.json
 ├── tsconfig.json
-└── README.md
+└── README.md                    # MCP client 使用說明
 ```
+
+## 詳細使用指南
+
+有關 MCP 客戶端的詳細使用說明，包括設置、配置和最佳實踐，請參考我們的 [MCP 客戶端詳細指南](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-client-app/boilerplate/base/README.md)。
 
 ## 開發
 

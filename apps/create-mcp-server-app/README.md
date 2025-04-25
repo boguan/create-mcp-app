@@ -76,8 +76,17 @@ my-mcp-server/
 │       └── tools.ts      # Tool-related handlers
 ├── package.json
 ├── tsconfig.json
-└── README.md
+└── README.md             # MCP server development guide
 ```
+
+## MCP Server Development Guide
+
+For detailed instructions on how to develop and test your MCP server, including:
+- Setting up Claude for Desktop for testing
+- Understanding the MCP tool execution flow
+- Testing your server with real examples
+
+Please refer to our [detailed development guide](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/boilerplate/base/README.md).
 
 ## Development
 

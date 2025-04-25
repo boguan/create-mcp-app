@@ -43,7 +43,7 @@ bun create mcp-client-app@latest
 | -y, --default | CLIプロンプトをスキップし、デフォルトオプションで新しいアプリをブートストラップ |
 | --noInstall | 依存関係をインストールせずにプロジェクトを生成 |
 
-使用例：
+### 使用例：
 
 ```bash
 # 特定のディレクトリ名でプロジェクトを作成
@@ -69,16 +69,20 @@ pnpm create mcp-client-app@latest --noInstall
 ```
 my-mcp-client/
 ├── src/
-│   ├── MCPClient.ts           # MCPクライアントの実装
-│   ├── index.ts               # メインエントリーポイント
-│   └── types.d.ts             # TypeScript型定義
-├── .env                       # 環境設定ファイル
+│   ├── MCPClient.ts             # MCPクライアントの実装
+│   ├── index.ts                 # メインエントリーポイント
+│   └── types.d.ts               # TypeScript型定義
+├── .env                         # 環境設定ファイル
 ├── .gitignore                   # Gitの除外設定ファイル
 ├── server-config.json.example   # サーバー設定ファイルの例
 ├── package.json
 ├── tsconfig.json
-└── README.md
+└── README.md                    # MCPクライアントの使用説明
 ```
+
+## 詳細な使用ガイド
+
+MCPクライアントの使用方法、セットアップ、設定、ベストプラクティスなどの詳細な手順については、[詳細なMCPクライアントガイド](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-client-app/boilerplate/base/README.md)をご参照ください。
 
 ## 開発
 

@@ -43,7 +43,7 @@ bun create mcp-client-app@latest
 | -y, --default | 跳过 CLI 提示，使用所有默认选项创建新应用 |
 | --noInstall | 生成项目但不安装依赖 |
 
-使用示例：
+### 使用示例：
 
 ```bash
 # 使用指定目录名创建项目
@@ -69,16 +69,20 @@ pnpm create mcp-client-app@latest --noInstall
 ```
 my-mcp-client/
 ├── src/
-│   ├── MCPClient.ts           # MCP 客户端实现
-│   ├── index.ts               # 主入口文件
-│   └── types.d.ts             # TypeScript 类型定义
-├── .env                       # 环境配置文件
+│   ├── MCPClient.ts             # MCP 客户端实现
+│   ├── index.ts                 # 主入口文件
+│   └── types.d.ts               # TypeScript 类型定义
+├── .env                         # 环境配置文件
 ├── .gitignore                   # Git 忽略配置文件
 ├── server-config.json.example   # 服务器配置示例文件
 ├── package.json
 ├── tsconfig.json
-└── README.md
+└── README.md                    # MCP client 使用说明
 ```
+
+## 详细使用指南
+
+有关 MCP 客户端的详细使用说明，包括设置、配置和最佳实践，请参阅我们的 [MCP 客户端详细指南](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-client-app/boilerplate/base/README.md)。
 
 ## 开发
 

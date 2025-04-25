@@ -76,8 +76,17 @@ my-mcp-server/
 │       └── tools.ts      # ツール関連ハンドラー
 ├── package.json
 ├── tsconfig.json
-└── README.md
+└── README.md             # MCP サーバー開発ガイド
 ```
+
+## MCP サーバー開発ガイド
+
+MCP サーバーの開発とテストに関する詳細な手順については、以下をご参照ください：
+- Claude for Desktop のテスト環境セットアップ
+- MCP ツール実行フローの理解
+- 実際の例を使用したサーバーのテスト
+
+詳細な開発ガイドについては、[こちら](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/boilerplate/base/README.md)をご覧ください。
 
 ## 開発
 

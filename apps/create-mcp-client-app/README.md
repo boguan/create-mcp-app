@@ -43,7 +43,7 @@ The following advanced options are available when creating a project:
 | -y, --default | Skip the CLI prompts and bootstrap a new app with all default options |
 | --noInstall | Generate project without installing dependencies |
 
-Example usage:
+### Example usage:
 
 ```bash
 # Create a project with a specific directory name
@@ -69,16 +69,20 @@ pnpm create mcp-client-app@latest --noInstall
 ```
 my-mcp-client/
 ├── src/
-│   ├── MCPClient.ts           # MCP client implementation
-│   ├── index.ts               # Main entry point
-│   └── types.d.ts             # TypeScript type definitions
-├── .env                       # Environment configuration file
+│   ├── MCPClient.ts             # MCP client implementation
+│   ├── index.ts                 # Main entry point
+│   └── types.d.ts               # TypeScript type definitions
+├── .env                         # Environment configuration file
 ├── .gitignore                   # Git ignore configuration file
 ├── server-config.json.example   # Example server configuration file
 ├── package.json
 ├── tsconfig.json
-└── README.md
+└── README.md                    # MCP client usage guide
 ```
+
+## Detailed Usage Guide
+
+For detailed instructions on how to use the MCP client, including setup, configuration, and best practices, please refer to our [Detailed MCP Client Guide](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-client-app/boilerplate/base/README.md).
 
 ## Development
 
