@@ -16,7 +16,7 @@ Model Context Protocol (MCP) クライアントアプリケーションを素早
 
 ```bash
 # npmを使用
-npm create mcp-client-app@latest
+npx create-mcp-client-app@latest
 
 # pnpmを使用
 pnpm create mcp-client-app@latest

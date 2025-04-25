@@ -16,7 +16,7 @@ Model Context Protocol (MCP) サーバーアプリケーションを素早く構
 
 ```bash
 # Using npm
-npm create mcp-server-app@latest
+npx create-mcp-server-app@latest
 
 # Using pnpm
 pnpm create mcp-server-app@latest

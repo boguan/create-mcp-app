@@ -16,7 +16,7 @@ A CLI tool to quickly scaffold a Model Context Protocol (MCP) server application
 
 ```bash
 # Using npm
-npm create mcp-server-app@latest
+npx create-mcp-server-app@latest
 
 # Using pnpm
 pnpm create mcp-server-app@latest

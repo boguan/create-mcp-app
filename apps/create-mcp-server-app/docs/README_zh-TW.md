@@ -16,7 +16,7 @@
 
 ```bash
 # 使用 npm
-npm create mcp-server-app@latest
+npx create-mcp-server-app@latest
 
 # 使用 pnpm
 pnpm create mcp-server-app@latest
