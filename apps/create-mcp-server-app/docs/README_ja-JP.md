@@ -22,7 +22,7 @@ npm create mcp-server-app@latest
 pnpm create mcp-server-app@latest
 
 # Using yarn
-yarn create mcp-server-app@latest
+yarn create mcp-server-app
 
 # Using bun
 bun create mcp-server-app@latest
@@ -31,6 +31,32 @@ bun create mcp-server-app@latest
 現在のフォルダ内にディレクトリが作成されます。
 
 ![Server Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/server.gif)
+
+## 高度な使用方法
+
+プロジェクト作成時に以下の高度なオプションが利用可能です：
+
+| オプション/フラグ | 説明 |
+|------------|-------------|
+| [dir] | プロジェクトのディレクトリ名を指定 |
+| --noGit | プロジェクトでGitリポジトリを初期化しない |
+| -y, --default | CLIプロンプトをスキップし、デフォルトオプションで新しいアプリをブートストラップ |
+| --noInstall | 依存関係をインストールせずにプロジェクトを生成 |
+
+使用例：
+
+```bash
+# 特定のディレクトリ名でプロジェクトを作成
+pnpm create mcp-server-app@latest my-server-app
+
+# Gitの初期化なしでプロジェクトを作成
+pnpm create mcp-server-app@latest --noGit
+
+# デフォルトオプションでプロジェクトを作成
+pnpm create mcp-server-app@latest -y
+
+# 依存関係のインストールなしでプロジェクトを作成
+pnpm create mcp-server-app@latest --noInstall
 
 ## 必要条件
 

@@ -22,7 +22,7 @@ npm create mcp-client-app@latest
 pnpm create mcp-client-app@latest
 
 # Using yarn
-yarn create mcp-client-app@latest
+yarn create mcp-client-app
 
 # Using bun
 bun create mcp-client-app@latest
@@ -31,6 +31,32 @@ bun create mcp-client-app@latest
 It will create a directory inside the current folder.
 
 ![Client Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/client.gif)
+
+## Advanced Usage
+
+The following advanced options are available when creating a project:
+
+| Option/Flag | Description |
+|------------|-------------|
+| [dir] | Specify a directory name for the project |
+| --noGit | Explicitly tell the CLI to not initialize a new git repository in the project |
+| -y, --default | Skip the CLI prompts and bootstrap a new app with all default options |
+| --noInstall | Generate project without installing dependencies |
+
+Example usage:
+
+```bash
+# Create a project with a specific directory name
+pnpm create mcp-client-app@latest my-client-app
+
+# Create a project without git initialization
+pnpm create mcp-client-app@latest --noGit
+
+# Create a project with default options
+pnpm create mcp-client-app@latest -y
+
+# Create a project without installing dependencies
+pnpm create mcp-client-app@latest --noInstall
 
 ## Requirements
 

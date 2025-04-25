@@ -22,7 +22,7 @@ npm create mcp-client-app@latest
 pnpm create mcp-client-app@latest
 
 # Using yarn
-yarn create mcp-client-app@latest
+yarn create mcp-client-app
 
 # Using bun
 bun create mcp-client-app@latest
@@ -31,6 +31,32 @@ bun create mcp-client-app@latest
 这将在当前文件夹内创建一个目录。
 
 ![Client Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/client.gif)
+
+## 高级用法
+
+创建项目时可以使用以下高级选项：
+
+| 选项/标记 | 描述 |
+|------------|-------------|
+| [dir] | 指定项目的目录名称 |
+| --noGit | 明确告诉 CLI 不要在项目中初始化新的 git 仓库 |
+| -y, --default | 跳过 CLI 提示，使用所有默认选项创建新应用 |
+| --noInstall | 生成项目但不安装依赖 |
+
+使用示例：
+
+```bash
+# 使用指定目录名创建项目
+pnpm create mcp-client-app@latest my-client-app
+
+# 创建项目但不初始化 git
+pnpm create mcp-client-app@latest --noGit
+
+# 使用默认选项创建项目
+pnpm create mcp-client-app@latest -y
+
+# 创建项目但不安装依赖
+pnpm create mcp-client-app@latest --noInstall
 
 ## 要求
 

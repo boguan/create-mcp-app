@@ -22,7 +22,7 @@ npm create mcp-server-app@latest
 pnpm create mcp-server-app@latest
 
 # 使用 yarn
-yarn create mcp-server-app@latest
+yarn create mcp-server-app
 
 # 使用 bun
 bun create mcp-server-app@latest
@@ -31,6 +31,33 @@ bun create mcp-server-app@latest
 這將在當前資料夾內創建一個目錄。
 
 ![Server Demo](https://raw.githubusercontent.com/boguan/create-mcp-app/main/packages/docs/server.gif)
+
+## 進階使用
+
+以下是建立專案時可用的進階選項：
+
+| 選項/標記 | 說明 |
+|------------|-------------|
+| [dir] | 指定專案的目錄名稱 |
+| --noGit | 明確告訴 CLI 不要在專案中初始化新的 git 儲存庫 |
+| -y, --default | 跳過 CLI 提示並使用所有預設選項建立新應用程式 |
+| --noInstall | 生成專案時不安裝相依套件 |
+
+使用範例：
+
+```bash
+# 使用指定的目錄名稱建立專案
+pnpm create mcp-server-app@latest my-server-app
+
+# 建立不含 git 初始化的專案
+pnpm create mcp-server-app@latest --noGit
+
+# 使用預設選項建立專案
+pnpm create mcp-server-app@latest -y
+
+# 建立不安裝相依套件的專案
+pnpm create mcp-server-app@latest --noInstall
+```
 
 ## 要求
 
