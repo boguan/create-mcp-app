@@ -71,7 +71,14 @@ export const runCli = async (packageJson: PackageJson, defaultAppName: string): 
     cliResults.appName = cliProvidedName;
   }
 
-  cliResults.flags = program.opts();
+  const opts = program.opts();
+
+  cliResults.flags = {
+    noGit: Boolean(opts.noGit),
+    noInstall: Boolean(opts.noInstall),
+    default: Boolean(opts.default),
+    serverType: (opts.serverType as 'high-level' | 'advanced') || 'high-level'
+  };
 
   if (cliResults.flags.default) {
     return cliResults;
