@@ -43,7 +43,7 @@ The following advanced options are available when creating a project:
 | -y, --default | Skip the CLI prompts and bootstrap a new app with all default options |
 | --noInstall | Generate project without installing dependencies |
 
-Example usage:
+### Example usage:
 
 ```bash
 # Create a project with a specific directory name

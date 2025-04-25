@@ -43,7 +43,7 @@ bun create mcp-server-app@latest
 | -y, --default | 跳过 CLI 提示，使用所有默认选项创建新应用 |
 | --noInstall | 生成项目但不安装依赖 |
 
-使用示例：
+### 使用示例：
 
 ```bash
 # 使用指定目录名创建项目

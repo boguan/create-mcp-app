@@ -43,7 +43,7 @@ create-mcp-app/
 
 ## Quick Start
 
-To create a new MCP server application:
+To create a new MCP server application ([see detailed guide](apps/create-mcp-server-app/README.md)):
 
 ```bash
 npx create-mcp-server-app@latest my-mcp-server
@@ -51,7 +51,7 @@ npx create-mcp-server-app@latest my-mcp-server
 
 ![Server Demo](packages/docs/server.gif)
 
-To create a new MCP client application:
+To create a new MCP client application ([see detailed guide](apps/create-mcp-client-app/README.md)):
 
 ```bash
 npx create-mcp-client-app@latest my-mcp-client
