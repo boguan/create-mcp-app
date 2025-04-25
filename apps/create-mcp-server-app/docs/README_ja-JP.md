@@ -57,6 +57,7 @@ pnpm create mcp-server-app@latest -y
 
 # 依存関係のインストールなしでプロジェクトを作成
 pnpm create mcp-server-app@latest --noInstall
+```
 
 ## 必要条件
 

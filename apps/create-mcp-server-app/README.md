@@ -57,6 +57,7 @@ pnpm create mcp-server-app@latest -y
 
 # Create a project without installing dependencies
 pnpm create mcp-server-app@latest --noInstall
+```
 
 ## Requirements
 

@@ -57,6 +57,7 @@ pnpm create mcp-server-app@latest -y
 
 # 创建项目但不安装依赖
 pnpm create mcp-server-app@latest --noInstall
+```
 
 ## 要求
 
