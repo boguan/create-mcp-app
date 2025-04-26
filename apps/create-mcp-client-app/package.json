@@ -1,6 +1,6 @@
 {
   "name": "create-mcp-client-app",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Quickly create MCP client app",
   "author": "Boguan <786506@gmail.com>",
   "type": "module",
@@ -40,10 +40,13 @@
     "lint:fix": "pnpm lint --fix",
     "changeset": "changeset",
     "release": "changeset version",
-    "pub:release": "pnpm build && npm publish"
+    "pub:release": "pnpm build && npm publish",
+    "prepublishOnly": "pnpm build && sed -i.bak '/\"@mcp\\/cli\": \"workspace:\\*\"/d' package.json",
+    "postpublish": "mv package.json.bak package.json"
   },
   "dependencies": {
     "@clack/prompts": "^0.6.3",
+    "@mcp/cli": "workspace:*",
     "chalk": "5.2.0",
     "commander": "^10.0.1",
     "execa": "^7.2.0",

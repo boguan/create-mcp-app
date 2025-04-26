@@ -27,6 +27,9 @@ importers:
       '@clack/prompts':
         specifier: ^0.6.3
         version: 0.6.3
+      '@mcp/cli':
+        specifier: workspace:*
+        version: link:../../packages/cli
       chalk:
         specifier: 5.2.0
         version: 5.2.0
@@ -70,6 +73,9 @@ importers:
       '@clack/prompts':
         specifier: ^0.6.3
         version: 0.6.3
+      '@mcp/cli':
+        specifier: workspace:*
+        version: link:../../packages/cli
       chalk:
         specifier: 5.2.0
         version: 5.2.0

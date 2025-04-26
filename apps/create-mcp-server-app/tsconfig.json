@@ -47,7 +47,6 @@
     "baseUrl": "./",
     "paths": {
       "~/*": ["./src/*"],
-      "@mcp/cli": ["../../packages/cli/dist/index.d.ts"],
     },
   },
   "include": ["src", "tsup.config.ts", "prettier.config.mjs"]
