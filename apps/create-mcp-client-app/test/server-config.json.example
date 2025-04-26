@@ -1,6 +1,0 @@
-{
-  "command": "node",
-  "args": [
-    "/ABSOLUTE/PATH/TO/PARENT/FOLDER/server-name-1/dist/index.js"
-  ]
-}

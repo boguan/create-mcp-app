@@ -7,7 +7,10 @@ import { MCPClient } from "./MCPClient.js";
 import chalk from "chalk";
 import type { ServerConfig } from "./types.d.ts";
 
-dotenv.config();
+// Get the directory where the script is located
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+// Look for .env file in the same directory as the script
+dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
