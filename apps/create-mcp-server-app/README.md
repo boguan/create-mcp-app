@@ -82,9 +82,10 @@ my-mcp-server/
 ## MCP Server Development Guide
 
 For detailed instructions on how to develop and test your MCP server, including:
-- Setting up Claude for Desktop for testing
-- Understanding the MCP tool execution flow
-- Testing your server with real examples
+- Server setup and configuration
+- MCP tool execution flow
+- Testing with Cursor IDE and Claude Desktop
+- Real-world examples
 
 Please refer to our [detailed development guide](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/boilerplate/base/README.md).
 
