@@ -81,10 +81,11 @@ my-mcp-server/
 
 ## MCP 伺服器開發指南
 
-有關如何開發和測試您的 MCP 伺服器的詳細說明，包括：
-- 設置 Claude for Desktop 進行測試
-- 了解 MCP 工具執行流程
-- 使用實際範例測試您的伺服器
+如需了解如何開發和測試您的 MCP 伺服器，包括：
+- 伺服器設置和配置
+- MCP 工具執行流程
+- 使用 Cursor IDE 和 Claude Desktop 進行測試
+- 實際應用範例
 
 請參考我們的[詳細開發指南](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/boilerplate/base/README.md)。
 

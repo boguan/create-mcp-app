@@ -81,10 +81,11 @@ my-mcp-server/
 
 ## MCP サーバー開発ガイド
 
-MCP サーバーの開発とテストに関する詳細な手順については、以下をご参照ください：
-- Claude for Desktop のテスト環境セットアップ
-- MCP ツール実行フローの理解
-- 実際の例を使用したサーバーのテスト
+詳細な開発ガイドについては、以下を含む包括的な説明をご参照ください：
+- サーバーのセットアップと設定
+- MCPツールの実行フロー
+- Cursor IDEとClaude Desktopでのテスト方法
+- 実践的な例
 
 詳細な開発ガイドについては、[こちら](https://github.com/boguan/create-mcp-app/blob/main/apps/create-mcp-server-app/boilerplate/base/README.md)をご覧ください。
 
