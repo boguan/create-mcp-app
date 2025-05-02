@@ -56,9 +56,18 @@ Cursor will:
 4. Execute the tool through the MCP server
 5. Display the results in the chat
 
+![Cursor MCP Tool Execution](./docs/assets/cursor-mcp-tool-execution.png)
+
+*If you can't see the execution flow shown above, open Cursor Settings, select MCP, and make sure your MCP Server is enabled.*
+
+![](./docs/assets/cursor-mcp-server-status-settings.png)
+
+It may also throw errors like the following:
+
 ![Cursor MCP Tool Execution](./docs/assets/cursor-mcp-tool-execution-error-and-retry.png)
 
 *In the above image, you can see 'Invalid type for parameter 'a' in tool add', which is due to Cursor passing incorrect parameter types when calling the large language model. However, Cursor will correct the parameter types based on the error message returned and attempt to make the request again.*
+
 
 The tool execution flow in Cursor follows the same pattern as described in the previous section:
 1. Cursor creates an MCP Client that maintains a connection with your server
